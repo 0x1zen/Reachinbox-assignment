@@ -1,4 +1,3 @@
-// Main page
 import { useEffect, useState } from "react";
 import SubView from "../components/SubView";
 import MainPage from "../components/MainPage";
@@ -42,6 +41,7 @@ function OneBox() {
       <SideBar onMenuItemClick={handleMenuItemClick} />
       <TopBar />
       <div>
+        {/* Render the selected component */}
         {selectedComponent === "/" && <SubView />}
         {selectedComponent === "/search" && <SubView />}
         {selectedComponent === "/mail" && <SubView />}
